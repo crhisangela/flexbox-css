@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex shrink</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        .items{
+            background-color: bisque;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        
+        .s-2{
+            flex-shrink: 2;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <p>shrink 1</p>
+    <div class="container">
+        <div class="items s-1 fg-1">sdef</div>
+        <div class="items s-1 fg-1">ghfh</div>
+        <div class="items s-1 fg-1">gjhjjh</div>
+        <div class="items s-1 fg-1">ghfh</div>
+        <div class="items s-1 fg-1">gjkklkkllhjjh</div>
+        <div class="items s-1 fg-1">ghfh</div>
+        <div class="items s-1 fg-1">gjhjjh</div>
+    </div>
+
+    <p>shrink 2</p>
+    <div class="container">
+        <div class="items s-2 fg-2">slorem mmmmef</div>
+        <div class="items s-2 fg-2">ghfh</div>
+        <div class="items s-2 fg-2">gjbanana bananan banananahjjh</div>
+
+    </div>
+</body>
+</html>
